@@ -7,7 +7,7 @@ import {Post} from "../typings"
 interface Props {
   posts: [Post]
 }
-Link
+
 export default function Home({posts}: Props) {
   return (
     <div className="max-w-7xl mx-auto">
@@ -40,7 +40,7 @@ export default function Home({posts}: Props) {
                   />
                 )
               }
-              <div className='flex justify-between p-5 bg-white'>
+               <div className='flex justify-between p-5 bg-white'>
                   <div>
                       <p className='text-lg font-bold'>{post.title}</p>
                       <p className='text-xs'>{post.description} by {post.author.name}</p>
