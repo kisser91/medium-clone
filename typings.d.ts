@@ -2,6 +2,7 @@ export interface Post {
     _id: string;
     _createdAt: string;
     title: string;
+    comments: string;
     author: {
         name: string;
         image: string;
@@ -16,4 +17,5 @@ export interface Post {
         current: string;
     };
     body: [object];
+
 }
